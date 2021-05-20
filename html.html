@@ -13,10 +13,12 @@
       <li><a href="html.html">HTML</a></li>
       <li><a href="css.html">CSS</a></li>
       <li><a href="javascript.html">JavaScript</a></li>
+      <li><a href="practice.html">Practice</a></li>
     </ol>
 
     <div id="article">
       <h2>HTML</h2>
+      <h3>SUMMARY</h3>
       <p><a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification">
         Hypertext Markup Language (HTML)</a>
         Hypertext Markup Language (HTML) is the standard markup language for
@@ -24,9 +26,8 @@
         Web browsers receive HTML documents from a web server or from local storage
         and render them into multimedia web pages. HTML describes the structure of
          a web page semantically and originally included cues for the appearance of the document.
-      </p><p style="margin-top:45px;">
-      <img src="pexels-asad-photo-maldives-3293148.jpg" alt="beauty" width="100%">
-      </p><p style="margin-top:45px;">
+      </p>
+      <p>
         HTML elements are the building blocks of HTML pages.
         With HTML constructs, images and other objects, such as interactive forms,
         may be embedded into the rendered page. It provides a means to create
@@ -34,6 +35,154 @@
         headings, paragraphs, lists, links, quotes and other items. HTML elements are
         delineated by tags, written using angle brackets.
       </p>
+      <p style="margin-top:40px; margin-bottom:40px;">
+        <img src="Beautiful-Eyes-Girl-Wallpaper-in-HD.jpg" alt="beauty" width="90%">
+      </p>
+
+      <h3>Basic TAGS</h3>
+      <p>In this part, we are going to discuss about some basic tags of HTML.</p>
+      <p><strong>&#60;!DOCTYPE html&#62;</strong> : Every html web page starts with this tag
+        designating that this is HTML5 type of file.</p>
+      <p><strong>&#60;html&#62;</strong> : Actual HTML document starts with html tag and ends with it.</p>
+      <p><strong>&#60;head&#62;</strong> : Overall properties like 'document title', 'reference of other files',
+        setting metadata is located in this tag. This is non-printable.
+      <p><strong>&#60;body&#62;</strong> : Printable tag starts and ends with this tag.
+      <p style="margin-top:20px;">There are tags with no element. Those do not need content but only needs
+        attribute.
+
+      <h3>ATTRIBUTES</h3>
+      <p>Attribute is attribute of tag. It set properties of tag. It is located with start tag.</p>
+      <p><strong>Global attribute</strong> is attribute which can be used for every HTML elements.
+      <p><strong>id</strong> : Set unique identifier for the element.
+      <p><strong>class</strong> : Set style class defined in style sheet.
+      <p><strong>hidden</strong> : hidden
+      <p><strong>lang</strong> : I don't know.
+      <p><strong>style</strong> : Set in-line style.
+      <p><strong>tabindex</strong> : Make an order for keyboard navigation(using tab).
+      <p><strong>title</strong> : Set title for element.
+
+      <h3>SEMANTIC TAGS</h3>
+      <p>With the gigantic surge of computing tools, many tpyes of information can be accessed to almost
+        everyone. In 2020, about 59 zettabytes(10^21) are in earth. From this humongous amount of data,
+        to search information or relationships of words, search engine is necessary. This part, we will
+        see various tags which can be semantically interpreted in search engines.</p>
+        <img src="building-structure.png" alt="semantic structure" width="50%">
+
+      <h3>TAGS</h3>
+      <li><strong>Document Type Definition tag</strong> : Define form at the very first</li>
+      <li><strong>&#60;html&#62;</strong> : Parent tag for every tag except DTD tag</li>
+      <li><strong>&#60;head&#62;</strong> : Only one tag can exist. Only metadata can be included</li>
+      <li><strong>&#60;title&#62;</strong> : Define title for the page</li>
+      <li><strong>&#60;sytle&#62;</strong> : Define style of elements for the page</li>
+      <li><strong>&#60;link&#62;</strong> : Connect with other resources. Mainly with CSS</li>
+      <li><strong>&#60;script&#62;</strong> : Define client-side Javascript</li>
+      <li><strong>&#60;meta&#62;</strong> : Define metadata</li>
+      <li><strong>&#60;body&#62;</strong> : Present content of the page. Almost every element is located except metadata.</li>
+      <li><strong>heading</strong> : For head of ideas.</li>
+      <li><strong>text formatting</strong> : bold, strong, italic, (em)phasized(semantic),
+        small, mark, (del)eted, (ins)erted</li>
+      <li><strong>&#60;sub&#62;&&#60;sup&#62;</strong> : Subscript & superscript</li>
+      <li><strong>&#60;p&#62;</strong> : Paragraph</li>
+      <li><strong>&#60;br&#62;</strong> : Line break.</li>
+      <li><strong>&#60;hr&#62;</strong> : Draw horizontal line.</li>
+      <li><strong>&#60;pre&#62;</strong> : Maintain original form.</li>
+      <li><strong>&#60;q&#62;</strong> : Quote.</li>
+      <li><strong>&#60;blockquote&#62;</strong> : Indented quote.</li>
+
+    <h3>LINK TAGS</h3>
+    <h4>directory</h4>
+      <li>root <strong>/, C:\</strong> : root</li>
+      <li>home <strong>/Users/{account}, C:\Users\{account}</strong> : user</li>
+      <li>working <strong>./</strong> : working directory</li>
+      <li>parent <strong>../</strong> : parent directory</li>
+    <h4>available value</h4>
+      <li>absolute href="link"</li>
+      <li>relative href="(previous address)/link"</li>
+      <li>fragment identifier href="#id"<li>
+      <li>mail mailto:</li>
+      <li>script href="javascript:alert('sth');"<li>
+    <h4>target attribute</h4>
+      <li>_self : open in current tab</li>
+      <li>_black : open in new tab</li>
+
+    <h3>LIST TAGS</h3>
+      <li><strong>&#60;li&#62;</strong> : Unorderd list</li>
+      <li><strong>&#60;olp&#62;</strong> : Ordered list</li>
+      <li><strong>&#60;type&#62;</strong> : Representing number type</li>
+      <li><strong>&#60;value&#62;</strong> : Designate each value</li>
+      <li><strong>&#60;start&#62;</strong> : Designate starting value</li>
+      <li><strong>&#60;reversed&#62;</strong> : Reverse order</li>
+
+    <h3>TABLE TAGS</h3>
+    <table border="1">
+      <tr>
+        <th>&#60;table heading 1&#62;</th>
+        <th>&#60;table heading 2&#62;</th>
+        <th>&#60;table heading 3&#62;</th>
+      </tr>
+      <tr>
+        <td>&#60;table data 1&#62;</td>
+        <td>&#60;table data 2&#62;</td>
+        <td>&#60;table data 3&#62;</td>
+      </tr>
+      <tr>
+        <td>&#60;table data 4&#62;</td>
+        <td>&#60;table data 5&#62;</td>
+        <td>&#60;table data 6&#62;</td>
+      </tr>
+    </table>
+
+    <h3>IMAGE & AUDIO & VIDEO</h3>
+      <h4>image attributes</h4>
+        <li>src : source address</li>
+        <li>alt : alternative text</li>
+        <li>width : style feature</li>
+        <li>height : style feature</li>
+
+      <h4>audio attributes</h4>
+        <li>src : source address</li>
+        <li>preload : preload data before play?</li>
+        <li>autoplay : You know what.</li>
+        <li>loop : Auto repeat?</li>
+        <li>controls : Should we represent tools?</li>
+
+      <h4>video attributes</h4>
+        <li>src : source address</li>
+        <li>poster : image address for prepare video</li>
+        <li>preload : preload data before play?</li>
+        <li>autoplay :You know what.</li>
+        <li>loop : Auto repeat?</li>
+        <li>controls : Should we represent tools?</li>
+        <li>width : style feature</li>
+        <li>height : style feature</li>
+
+      <h3>FORM TAGS</h3>
+      <h4>Summary</h4>
+      <p>To get information from the users, HTML provides input form for web pages.
+      Form tag can use input format tag inside of form tag.
+      The procedure with the user and the server via form tag is,
+      <ol>
+        <li>Visit web pages with form tags.</li>
+        <li>Input content in the form.</li>
+        <li>Send all data in the form to web server.</li>
+        <li>Web server pass the data to web program.</li>
+        <li>Web program operate the data.</li>
+        <li>Web program pass new html page to web server.</li>
+        <li>Web server send html page to browser.</li>
+        <li>Browser show page.</li>
+      </ol>
+        <p style="margin-top:40px; margin-bottom:40px;">
+          <img src="form.png" alt="beauty" width="90%">
+        </p>
+      </p>
+      <h4>Form attributes</h4>
+        <li>action : Designate server-side script file for the form.</li>
+        <li>name : Set identifier</li>
+        <li>accept-charset : Designate character encoding format to send the form</li>
+        <li>target : Set opening tab value for the script file designated at action attribute</li>
+        <li>method : Set http method to send the form to web server.</li>
+      <h4>input tag</h4>
+
     </div>
 
   </div>
