@@ -2,6 +2,11 @@
 <head>
   <title>WEB - css</title>
   <meta charset="utf-8">
+  <style>
+    h3, p{
+      size:100px;
+    }
+  </style>
 </head>
 
 <link rel="stylesheet" href="style.css">
@@ -29,8 +34,167 @@
         and user interfaces for many mobile applications.
       </p>
       <p style="margin-top:45px;">
-        <img src="6049bb988265bbaa195e46b42a298819.jpg" alt="beauty" width="90%">
+        <img src="our-galaxy.jpg" alt="beauty" width="90%">
       </p>
+
+      <h3>Selectors & Properties Basics</h3>
+      <p>Selector defines sytle of html elements. To do so, we must able to "Select" those
+        elements that we eager to.</p>
+      <p style="margin-top:45px;"><img src="selector.png" alt="beauty" width="90%"></p>
+      <p>By selecting elements with Selector and designating value for properties can define
+        various types of styles. ***Properties must be standard specs which has already been set by CSS.
+        Each syntax called Rule set and the set of rule set is called style sheet.<br>
+        Each values for properties must be specific unit which fits with property.
+        Selectors can be represented by Link & Embed & Inline.<br>
+        Html page without interlocked with css is rendered with default css by browser.
+        There is also sth called Reset CSS which do exactly what it suppose to do.
+        It equalize styles no matter which browser you use.
+      </p>
+
+      <h3>Selector</h3>
+      <p>
+        Selectors can be categorized not only by where it represented, but also by the affected.
+        <li>*{} : Universal selector</li>
+        <li>sth{} : "Type" selector</li>
+        <li>#id{} : "ID" attribute selector</li>
+        <li>.class{} : "Class" attribute selector</li>
+      </p>
+        <h4>Attribute selecting with regular expression</h4>
+      <p>
+        <li>sth[attribute]{} : select sth with this attribute</li>
+        <li>sth[attribute="value"]{} : with value</li>
+        <li>sth[attribute~="value"]{} : value as a word</li>
+        <li>sth[attribute|="value"]{} : value or added with hyphen</li>
+        <li>sth[attribute^="value"]{} : starts with value</li>
+        <li>sth[attribute$="value"]{} : ends with value</li>
+        <li>sth[attribute*="value"]{} : include with the value</li>
+      </p>
+
+      <h3>Combinator</h3>
+      Combinators are combinators.
+      <p>
+        <li>sth sth{} : descendent(under)</li>
+        <li>sth > sth{} : child(right under)</li>
+        <li>sth + sth{} : adjacent sibling</li>
+        <li>sth ~ sth{} : general sibling</li>
+      </p>
+
+      <h3>Pseudo-class selector</h3>
+      is used when the element is in special status such as
+      <h4>Link pseudo-classes</h4>
+      <p>
+        <li>sth:link{} : not visited yet</li>
+        <li>sth:visited{} : visited</li>
+        <li>sth:hover{} : mouse pointer is up</li>
+        <li>sth:active{} : is clicked</li>
+        <li>sth:focus{} : tab focused</li>
+      </p>
+      <h4>UI element states pseudo-classes</h4>
+      <p>
+        <li>sth:checked{} : </li>
+        <li>sth:enabled{} : </li>
+        <li>sth:disabled{} : </li>
+      </p>
+      <h4>Structural pseudo-classes</h4>
+      <p>
+        <li>sth:first-child({} : </li>
+        <li>sth:last-child{} : </li>
+        <li>sth:first-child(n){} : </li>
+        <li>sth:last-child(n){} : </li>
+        <li>sth:first-of-type{} : </li>
+        <li>sth:last-of-type{} : </li>
+        <li>sth:nth-of-type(n){} : </li>
+        <li>sth:nth-of-type(n){} : </li>
+      </p>
+      <h4>Negation pseudo-classes</h4>
+      <p>
+        <li>sth:not{} : </li>
+      </p>
+      <h4>Input validity pseudo-classes</h4>
+      <p>
+        <li>sth:valid{} : ***</li>
+        <li>sth:invalid{} : ***</li>
+      </p>
+      <h3>Pseudo-element selector</h3>
+      <p>
+        <li>sth::first-letter{} : </li>
+        <li>sth::first-line{} : </li>
+        <li>sth::after{} : usually with content property </li>
+        <li>sth::before{} : usually with content property </li>
+        <li>sth::selection{} : </li>
+      </p>
+
+      <h2>Unit</h2>
+      is unit that is used for css.
+      <li>For general browers, Default value of font size is 16px.(1em, 100%)</li>
+      <li>For general browers, 1 pixel is defined as 1/96 inch.</li>
+      <li>Unit em is relative with the inherited value. </li>
+      <li>Unit rem is absolute.</li>
+
+      <h3>Viewport</h3>
+      For the reactive web design, unit % is often used as unit. Hence, viewport
+      is also relative value.
+
+      <h3>Color</h3>
+      <a href='https://www.w3schools.com/colors/colors_picker.asp'>colors_picker</a>
+
+      <h2>Box models</h2>
+      Every html element has Box-shaped AREA. Each box is consist of MBPC,
+      <img src="box-model.png">box-model</img>
+      <li>total width = width(content) + (left + right)(Margin + Border + Padding)</li>
+      <li>total height = height(content) + (top + bottom)(Margin + Border + Padding)</li>
+      <li>box-sizing:border-box :
+      <li>If element size > browser size : Scroll bar is applied.</li>
+
+      <h3>Border style</h3>
+      You can set border style with,
+      <li>border-style : </li>
+      <li>border-width : </li>
+      <li>border-color : </li>
+      <li>border-radius : </li>
+
+      <h2>Display & Visibility & Opacity</h2>
+
+      <h3>Display</h3>
+      <h4>block level property</h4>
+        <li>always starts with new Line</li>
+        <li>always width is 100% of screen</li>
+        <li>width, height, margin, padding property available</li>
+        <li>inline available</li>
+      <h4>inline level property</h4>
+        <li>always not starts with new Line</li>
+        <li>always width is 100% of content</li>
+        <li>width, height, margin, padding property not available</li>
+        <li>inline not available</li>
+      <h4>inline-block level property</h4>
+
+      <h3>Visibility & Opacity</h3>
+      is about see or not see. That is, it is about rendering.
+        <li>visibility:visible : </li>
+        <li>visibility:hidden : </li>
+        <li>visibility:collapse : </li>
+        <li>opacity:value : </li>
+
+      <h2>Background</h2>
+      is Background
+
+      <h2>Font & Text</h2>
+        <li>font-size: : </li>
+        <li>font-style: : </li>
+        <li>font-weight: : </li>
+        <li>line-height : </li>
+        <li>letter-spacing : </li>
+        <li>text-align : </li>
+        <li>text-decoration : </li>
+
+      <h2>Position</h2>
+      define location of element.
+      <li>position:static : </li>
+      <li>position:relative : </li>
+
+      <audio src="Memories We Made (Original Mix).mp3" autoplay controls loop preload="auto" muted>
+        Memories we made - no spirit
+      </audio>
     </div>
 
   </div>
